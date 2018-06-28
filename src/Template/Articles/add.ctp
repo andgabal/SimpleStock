@@ -1,6 +1,6 @@
 <!-- File: src/Template/Articles/add.ctp -->
 
-<h1>Add Article</h1>
+<h1>Agregar Articulo</h1>
 <?php
     echo $this->Form->create($article);
     // Hard code the user for now.

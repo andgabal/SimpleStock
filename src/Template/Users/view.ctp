@@ -11,6 +11,7 @@
         <li><?= $this->Form->postLink(__('Delete User'), ['action' => 'delete', $user->User], ['confirm' => __('Are you sure you want to delete # {0}?', $user->User)]) ?> </li>
         <li><?= $this->Html->link(__('List Users'), ['action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New User'), ['action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('LOGOUT'), ['action' => 'Logout']) ?></li>
     </ul>
 </nav>
 <div class="users view large-9 medium-8 columns content">

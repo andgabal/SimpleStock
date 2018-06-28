@@ -14,6 +14,7 @@
             )
         ?></li>
         <li><?= $this->Html->link(__('List Users'), ['action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('LOGOUT'), ['action' => 'Logout']) ?></li>
     </ul>
 </nav>
 <div class="users form large-9 medium-8 columns content">
@@ -21,7 +22,6 @@
     <fieldset>
         <legend><?= __('Edit User') ?></legend>
         <?php
-            echo $this->Form->control('id');
             echo $this->Form->control('username');
             echo $this->Form->control('password');
         ?>

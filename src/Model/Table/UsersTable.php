@@ -35,7 +35,7 @@ class UsersTable extends Table
 
         $this->setTable('users');
         $this->setDisplayField('User');
-        $this->setPrimaryKey('User');
+        $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
     }
@@ -76,7 +76,7 @@ class UsersTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->isUnique(['username']));
+        $rules->add($rules->isUnique(['id']));
 
         return $rules;
     }

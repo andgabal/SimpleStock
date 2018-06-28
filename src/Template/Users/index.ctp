@@ -8,6 +8,7 @@
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('New User'), ['action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('LOGOUT'), ['action' => 'Logout']) ?></li>
     </ul>
 </nav>
 <div class="users index large-9 medium-8 columns content">
@@ -34,7 +35,7 @@
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $user->User]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $user->User]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $user->User], ['confirm' => __('Are you sure you want to delete # {0}?', $user->User)]) ?>
+                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $user->User], ['confirm' => __('Esta seguro de que desea eliminar el usuario?', $user->User)]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>
